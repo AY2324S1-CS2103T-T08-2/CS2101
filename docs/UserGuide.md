@@ -33,7 +33,7 @@ On top of these advantages, we believe that contact management must be **efficie
 
 ## About This User Guide
 
-This user guide provides **in-depth documentation** on the various commands that are available in _NetworkBook_. These commands are grouped into **4 broad categories**: 
+This user guide provides **in-depth documentation** on the various commands that are available in _NetworkBook_. These commands are grouped into **4 broad categories**:
 
 1. [Manage contact information](#category-1---manage-contact-information)
 2. [View contact details](#category-2---view-contact-details)
@@ -86,13 +86,17 @@ _NetworkBook_ 1.3 includes several new **features and improvements** for ease of
 
 ## Features
 
+### Contact Fields
+
+Many of NetworkBook's commands allow you to specify a particular _field_ (piece of information) of a contact to operate on. This section lists all of the available fields, as well as how you can specify them in commands.
+
 <!-- @@author Singa-Pirate -->
 
 <div markdown="block" class="alert alert-info">
 
 :information_source: **Fields of a contact**
 
-In _NetworkBook_, details of a contact are categorised into different **fields**. Each field has a corresponding **prefix** in the command format. 
+In _NetworkBook_, details of a contact are categorised into different **fields**. Each field has a corresponding **prefix** in the command format.
 
 Some fields are **single-valued fields**, meaning that each contact has **only 1 value** for each of these fields.
 
@@ -129,7 +133,7 @@ In _NetworkBook_, you can manage contact information by changing the fields assi
 
 In _NetworkBook_, you often need to provide an index to specify a contact, or an entry in a multi-valued field of a contact. Indices are **integers counted from 1**.
 
-Make sure to provide indices that has a corresponding item in your _NetworkBook_. If your command contains an invalid index, an error message will be shown.
+Make sure to provide indices that have a corresponding item in your _NetworkBook_. If your command contains an invalid index, an error message will be shown.
 
 </div>
 
@@ -154,7 +158,7 @@ You can use the `create` command to create a new contact. When creating a contac
 
 :information_source: **Non-mandatory fields** you can associate with a contact at the point of creation comprise the contact's `phones`, `emails`, `links`, `graduation semester`, `courses`, `specialisations`, `tags` and `priority level`. (These fields can also be subsequently added to the contact using the `add` command.)
 
-To view a comprehensive list of fields and their prefixes, go to the start of the [Features section](#features).
+To view a comprehensive list of fields and their prefixes, go to the [Contact Fields section](#contact-fields).
 </div>
 
 <div markdown="span" class="alert alert-warning">
@@ -176,7 +180,7 @@ To view a comprehensive list of fields and their prefixes, go to the start of th
 
 #### Add details to contact: `add [index] [fields]`
 
-You can use the `add` command to add contact details under fields associated with an existing contact. No new contact will be created. 
+You can use the `add` command to add contact details under fields associated with an existing contact. No new contact will be created.
 
 **Format:** `add [index] [field prefix] [field value] ...`
 
@@ -192,7 +196,7 @@ You can add multiple fields with one `add` command by entering multiple sets of 
 
 :information_source: Fields you can add contact details to for an existing contact comprise the contact's `phones`, `emails`, `links`, `graduation semester`, `courses`, `specialisations`, `tags` and `priority level`.
 
-To view a comprehensive list of fields and their prefixes, go to the start of the [Features section](#features).
+To view a comprehensive list of fields and their prefixes, go to the [Contact Fields section](#contact-fields).
 
 </div>
 
@@ -211,7 +215,7 @@ For example, if your contact at index `1` already has the phone number `12345678
 &nbsp;
 
 * `add 2 /grad AY2223-S1`
-* `add 3 /link https://nknguyenhc.github.io /email nknguyentdn@gmail.com `
+* `add 3 /link https://nknguyenhc.github.io /email nknguyentdn@gmail.com`
 * `add 1 /priority high /tag data analyst /course CS1101S /spec Robotics & AI`  
 
 [Table of Contents](#table-of-contents)
@@ -246,7 +250,7 @@ If index of a multi-valued field is not specified, it will **default to 1**.
 
 :information_source: Fields you can edit contact details for in an existing contact comprise the contact's `name`, `phones`, `emails`, `links`, `graduation semester`, `courses`, `specialisations`, `tags` and `priority level`.
 
-To view a comprehensive list of fields and their prefixes, go to the start of the [Features section](#features).
+To view a comprehensive list of fields and their prefixes, go to the [Contact Fields section](#contact-fields).
 </div>
 
 **Example usage:**
@@ -314,7 +318,7 @@ If index of a multi-valued field is not specified, it will **default to 1**.
 
 :information_source: Fields you can delete contact information for in an existing contact comprise the contact's `phones`, `emails`, `links`, `graduation semester`, `courses`, `specialisations`, `tags` and `priority level`.
 
-To view a comprehensive list of fields and their prefixes, go to the start of the [Features section](#features).
+To view a comprehensive list of fields and their prefixes, go to the [Contact Fields section](#contact-fields).
 </div>
 
 **Example usage:**
