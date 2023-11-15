@@ -124,8 +124,8 @@ In _NetworkBook_, you can manage contact information by changing the fields assi
 
 </div>
 
-<div markdown="block" class="alert alert-secondary">
-<span id="indices">:information_source: **Indices**</span>
+<div markdown="block" class="alert alert-warning">
+<span id="indices">:bulb: **Indices**</span>
 
 In _NetworkBook_, you often need to provide an index to specify a contact, or an entry in a multi-valued field of a contact. Indices are **integers counted from 1**.
 
@@ -228,8 +228,8 @@ For **single-valued** fields, the `/index` prefix should not be used.
 
 For **multi-valued** fields, the `/index` prefix is optional and at most 1 index can be specified at a time.
 
-<div markdown="span" class="alert alert-secondary">
-:information_source: **Note:**
+<div markdown="span" class="alert alert-warning">
+:bulb: **Note:**
 If index of a multi-valued field is not specified, it will **default to 1**.
 </div>
 
@@ -288,8 +288,8 @@ For **single-valued** fields, the `/index` prefix should not be used.
 
 For **multi-valued** fields, the `/index` prefix is optional and at most 1 index can be specified at a time.
 
-<div markdown="span" class="alert alert-secondary">
-:information_source: **Note:**
+<div markdown="span" class="alert alert-warning">
+:bulb: **Note:**
 If index of a multi-valued field is not specified, it will **default to 1**.
 </div>
 
@@ -364,7 +364,7 @@ If the list is currently sorted in a particular manner (using [`sort`](#sort-con
 
 * `[name]` is a term found in the names of the contacts you wish to find.
 
-<div markdown="span" class="alert alert-secondary">:information_source: **Note:**
+<div markdown="span" class="alert alert-warning">:bulb: **Note:**
 Using the find command will update the filter status to `Filter by: name`. The find command will also override a filter command if you used it, and vice versa.
 </div>
 
@@ -383,7 +383,7 @@ Using the find command will update the filter status to `Filter by: name`. The f
 You can use the `sort` command to sort your list of contacts so that you can efficiently locate contacts with special characteristics that you are looking for. 
 If the list is currently filtered in a certain manner (using [`find`](#find-a-contact-find-name) or [`filter`](#filter-contacts-list-filter-by-field-with-term)), the updated list will also be filtered in the same manner.
 
-<div markdown="span" class="alert alert-secondary">:information_source: **Note:**
+<div markdown="span" class="alert alert-warning">:bulb: **Note:**
 When you first open _NetworkBook_, the list starts off sorted by **name** in **ascending** order.
 </div>
 
@@ -399,6 +399,7 @@ When you first open _NetworkBook_, the list starts off sorted by **name** in **a
     * `grad` - Sort chronologically by graduation year
     * `priority` - Sort by priority
 
+
 * `[order]` (optional) is the order to sort in. If not specified, defaults to ascending.
 
     List of options:
@@ -406,8 +407,9 @@ When you first open _NetworkBook_, the list starts off sorted by **name** in **a
     * `asc`/`ascending` - Sort in ascending order
     * `desc`/`descending` - Sort in descending order
 
-<div markdown="span" class="alert alert-secondary">:information_source: **Note:**
+<div markdown="span" class="alert alert-warning">:bulb: **Note:**
 If sorting by an optional field (i.e. `graduation` or `priority`), all contacts without that field will be placed at the bottom of the sorted list regardless of sorting order.
+
 </div>
 
 **Example usage:**
@@ -443,6 +445,7 @@ You can undo a filter command using [`undo`](#undo-last-change-to-networkbook-un
     * `spec` - Filter to contacts whose specialisations contain one of the terms
     * `grad` - Filter to contacts who graduated in a specific year
 
+
 * `[term]` is the terms that will be filtered against. All contacts
 in the filtered contact list must have part of the `[term]` in the `[field]`
 specified above.
@@ -454,9 +457,11 @@ specified above.
     * `true` - Remove contacts who have finished/haven't started the course as of the current date of your system.
     * `false` - (default). Include all contacts with matching course terms in the filtered list regardless of course dates.
 
-<div markdown="span" class="alert alert-secondary">:information_source: **Note:**
+<div markdown="span" class="alert alert-warning">
+:bulb: **Note:**
 `taken` compares the dates of the course with the current date of
 your system. It does not factor in other fields like graduation year.
+
 </div>
 
 **Example usage:**
@@ -483,8 +488,8 @@ You can use the `open` command to open a contact's link so that you can convenie
 * `[index]` is the [index](#indices) of the contact in the list.
 * `[link index]` is the [index](#indices) of the link within the contact's link list.
 
-<div markdown="span" class="alert alert-secondary">
-:information_source: **Note:**
+<div markdown="span" class="alert alert-warning">
+:bulb: **Note:**
 It is optional to provide the link index. If not specified, it will **default to 1**.
 
 
@@ -510,8 +515,8 @@ You can use the `email` command to open the default mailbox application to compo
 * `[index]` is the [index](#indices) of the contact in the list.
 * `[email index]` is the [index](#indices) of the email address within the contact's email list.
 
-<div markdown="span" class="alert alert-secondary">
-:information_source: **Note:**
+<div markdown="span" class="alert alert-warning">
+:bulb: **Note:**
 It is optional to provide the email index. If not specified, it will **default to 1**.
 </div>
 
@@ -616,7 +621,7 @@ This category introduces available interactions using **keyboard** and **mouse**
 
 #### Auto-fill command preamble: `ctrl-F/N/G/U/R`
 
-When typing in the command box, if the command box is empty, you can use the following keyboard shortcuts to auto-fill the first word of some commands:
+When typing in the command box, if the command box is empty, you can use the following keyboard shortcuts to **auto-fill** the first word of some commands:
 
 * `ctrl-F`: auto-fill with `find`
 * `ctrl-N`: auto-fill with `create`
@@ -628,7 +633,7 @@ When typing in the command box, if the command box is empty, you can use the fol
 
 #### Navigate command history: `Up/Down arrow keys`
 
-When typing in the command box, you can use the arrow keys to fill the command box with a previously executed command.
+When typing in the command box, you can use the arrow keys to fill the command box with a **previously executed command**.
 
 * `Up arrow key`: navigate back to the previous command in the history, if any.
 * `Down arrow key`: navigate forth to the next command in the history, if any.
@@ -639,23 +644,29 @@ When typing in the command box, you can use the arrow keys to fill the command b
 
 When not typing in the command box, you can use the following shortcuts to quickly execute an `undo` or `redo` command.
 
-* `ctrl-Z`: undo last change to _NetworkBook_ (equivalent to [`undo` command](#undo-last-change-to-networkbook-undo))
-* `ctrl-Y`: redo last change undone (equivalent to [`redo` command](#redo-last-undone-change-redo))
+* `ctrl-Z`: **undo** last change to _NetworkBook_ (equivalent to [`undo` command](#undo-last-change-to-networkbook-undo))
+* `ctrl-Y`: **redo** last change undone (equivalent to [`redo` command](#redo-last-undone-change-redo))
 
-Note that this only works when the command box is not active. If you are typing in the command box, these shortcuts will be used to undo or redo changes made to the command text.
+<div markdown="span" class="alert alert-warning">
+:bulb: **Note:**
+These shortcuts only work when the command box is not active. If you are typing in the command box, these shortcuts will be used to undo or redo changes made to the command text.
+
+</div>
 
 [Table of Contents](#table-of-contents)
 
 #### Other useful shortcuts: `ctrl-S/W`, `F1`
 
-* `ctrl-S`: manually save to data file (equivalent to [`save` command](#manually-save-to-data-file-save))
-* `ctrl-W`: exit _NetworkBook_ (equivalent to [`exit` command](#exit-networkbook-exit))
-* `F1`: view help window (equivalent to [`help` command](#view-help-window-help))
+* `ctrl-S`: manually **save** to data file (equivalent to [`save` command](#manually-save-to-data-file-save))
+* `ctrl-W`: **exit** _NetworkBook_ (equivalent to [`exit` command](#exit-networkbook-exit))
+* `F1`: view **help** window (equivalent to [`help` command](#view-help-window-help))
 
-<div markdown="span" class="alert alert-secondary">
-:information_source: **Note:**
+<div markdown="span" class="alert alert-warning">
+:bulb: **Note:**
 If the `F1` key is bound to a different function in your computer settings, the keyboard shortcut to view help window may not work as expected.
+
 </div>
+
 [Table of Contents](#table-of-contents)
 
 <!-- @@author xenosf -->
@@ -664,15 +675,15 @@ While _NetworkBook_ is optimised for use with keyboards and text commands, it al
 
 #### Filter (equivalent to [`filter` command](#filter-contacts-list-filter-by-field-with-term))
 
-You can click on a contact's tag, course, graduation, or specialisation to view all contacts with the same tag/course/graduation/specialisation.
+You can click on a contact's tag, course, graduation, or specialisation to **view all contacts** with the **same** tag/course/graduation/specialisation.
 
 #### Open link (equivalent to [`open` command](#open-a-contacts-link-open-index-index-link-index))
 
-You can click on a contact's link to open the link in your web browser.
+You can click on a contact's link to **open the link** in your web browser.
 
 #### Email contact (equivalent to [`email` command](#send-email-to-a-contacts-email-address-email-index-index-email-index))
 
-You can click on a contact's email address to email them.
+You can click on a contact's email address to **draft an email** to the contact.
 
 [Table of Contents](#table-of-contents)
 
