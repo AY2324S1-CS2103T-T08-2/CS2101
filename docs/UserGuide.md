@@ -297,6 +297,7 @@ To view a comprehensive list of fields and their prefixes, go to the [Contact Fi
 [Table of Contents](#table-of-contents)
 
 <!-- @@author Singa-Pirate -->
+<div style="page-break-after: page;"></div>
 
 #### Delete a contact: `delete [index]`
 
@@ -323,6 +324,8 @@ You can remove a contact from your _NetworkBook_ using the `delete` command, so 
 * `delete 1`
 
 [Table of Contents](#table-of-contents)
+
+<div style="page-break-after: page;"></div>
 
 #### Delete some details: `delete [index] [field prefix] [options]`
 
@@ -355,6 +358,8 @@ If index of a multi-valued field is not specified, it will **default to 1**.
 To view a comprehensive list of fields and their prefixes, go to the [Contact Fields section](#contact-fields).
 </div>
 
+<div style="page-break-after: page;"></div>
+
 **Example usage:**
 
 * `delete 1 /phone /index 2`
@@ -371,6 +376,8 @@ To view a comprehensive list of fields and their prefixes, go to the [Contact Fi
 [Table of Contents](#table-of-contents)
 
 <!-- @@author xenosf -->
+
+<div style="page-break-after: page;"></div>
 
 #### Delete all contacts: `clear`
 
