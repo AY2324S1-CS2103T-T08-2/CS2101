@@ -236,8 +236,8 @@ For **single-valued** fields, the `/index` prefix should not be used.
 
 For **multi-valued** fields, the `/index` prefix is optional and at most 1 index can be specified at a time.
 
-<div markdown="span" class="alert alert-primary">
-:infomation_source: **Note:**
+<div markdown="span" class="alert alert-info">
+:information_source: **Note:**
 If index of a multi-valued field is not specified, it will **default to 1**.
 </div>
 
@@ -304,7 +304,7 @@ For **single-valued** fields, the `/index` prefix should not be used.
 
 For **multi-valued** fields, the `/index` prefix is optional and at most 1 index can be specified at a time.
 
-<div markdown="span" class="alert alert-primary">
+<div markdown="span" class="alert alert-info">
 :information_source: **Note:**
 If index of a multi-valued field is not specified, it will **default to 1**.
 </div>
@@ -515,7 +515,7 @@ You can use the `open` command to open a contact's link so that you can convenie
 * `[index]` is the [index](#indices) of the contact in the list.
 * `[link index]` is the [index](#indices) of the link within the contact's link list.
 
-<div markdown="span" class="alert alert-primary">
+<div markdown="span" class="alert alert-info">
 :information_source: **Note:**
 It is optional to provide the link index. If not specified, it will **default to 1**.
 
@@ -546,7 +546,7 @@ You can use the `email` command to open the default mailbox application to compo
 * `[index]` is the [index](#indices) of the contact in the list.
 * `[email index]` is the [index](#indices) of the email address within the contact's email list.
 
-<div markdown="span" class="alert alert-primary">
+<div markdown="span" class="alert alert-info">
 :information_source: **Note:**
 It is optional to provide the email index. If not specified, it will **default to 1**.
 </div>
