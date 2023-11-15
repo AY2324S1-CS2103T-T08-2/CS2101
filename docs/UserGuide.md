@@ -79,9 +79,12 @@ _NetworkBook_ 1.3 includes several new **features and improvements** for ease of
         1. Open your terminal emulator app.
         1. Navigate to the folder you have created using `cd`.
         1. Type in `java -jar networkbook.jar`, then press enter to open the app.
-1. You should now see the _NetworkBook_ window on your screen. This is what _NetworkBook_ looks like:
-    ![Annotated diagram of the _NetworkBook_ window](./images/gui-annotated.png)
-1. You can now start using _NetworkBook_!
+1. You should now see the _NetworkBook_ window on your screen.
+    * This is what the _NetworkBook_ window looks like:
+        ![Annotated diagram of the _NetworkBook_ window](./images/gui-annotated.png)
+    * This is what a contact in _NetworkBook_ looks like:
+        ![Annotated diagram of a _NetworkBook_ contact](./images/contact.png)
+2. You can now start using _NetworkBook_!
     * **Learn more** about the commands in the [features](#features) section.
 
 ## Features
@@ -170,9 +173,11 @@ To view a comprehensive list of fields and their prefixes, go to the [Contact Fi
 
 * `create /name Jiale /phone 12345678 /grad AY2526-S2`
 
-&nbsp;
-![create command](images/create/create.png)
-&nbsp;
+    &nbsp;
+    ![create command](images/create/create.png)
+
+    In the screenshot above, the contact "Jiale" has been created. Jiale's index number depends on the list's current sorting - in this case, "Jiale" is #6 when sorted by name.
+    &nbsp;
 
 * `create /name Jiale`
 
@@ -210,9 +215,11 @@ For example, if your contact at index `1` already has the phone number `12345678
 
 * `add 1 /phone 91234567`
 
-&nbsp;
-![add phone](images/add-remark/add-phone.png)
-&nbsp;
+    &nbsp;
+    ![add phone](images/add-remark/add-phone.png)
+
+    In the screenshot above, the phone number `91234567` has been added to contact #1 (Alex Yeoh).
+    &nbsp;
 
 * `add 2 /grad AY2223-S1`
 * `add 3 /link https://nknguyenhc.github.io /email nknguyentdn@gmail.com`
@@ -257,9 +264,11 @@ To view a comprehensive list of fields and their prefixes, go to the [Contact Fi
 
 * `edit 3 /priority low`
 
-&nbsp;
-![update success](images/edit/edit.png)
-&nbsp;
+    &nbsp;
+    ![update success](images/edit/edit.png)
+
+    In the screenshot above, contact #3 (Charlotte Oliveiro)'s priority has been changed to `low` (1 star)
+    &nbsp;
 
 * `edit 2 /phone 10938472 /index 1`
 * `edit 3 /email nkn@gmail.com`
@@ -282,9 +291,11 @@ You can remove a contact from your _NetworkBook_ using the `delete` command, so 
 
 * `delete 6`
 
-&nbsp;
-![delete](images/delete/delete.png)
-&nbsp;
+    &nbsp;
+    ![delete](images/delete/delete.png)
+
+    In the screenshot above, the contact previously numbered #6 (Jiale) has been deleted.
+    &nbsp;
 
 * `delete 1`
 
@@ -325,9 +336,11 @@ To view a comprehensive list of fields and their prefixes, go to the [Contact Fi
 
 * `delete 1 /phone /index 2`
 
-&nbsp;
-![delete phone](images/delete/delete-phone.png)
-&nbsp;
+    &nbsp;
+    ![delete phone](images/delete/delete-phone.png)
+
+    In the screenshot above, the 2nd phone number of contact #1 (Alex Yeoh) has been deleted.
+    &nbsp;
 
 * `delete 5 /link /index 2`
 * `delete 10 /priority`
@@ -400,9 +413,9 @@ Using the find command will update the filter status to `Filter by: name`. The f
 
 * `find Dav`
 
-&nbsp;
-![search](images/find/find.png)
-&nbsp;
+    &nbsp;
+    ![search](images/find/find.png)
+    &nbsp;
 
 * `find Kai Jie`
 
@@ -450,9 +463,9 @@ If sorting by an optional field (i.e. `graduation` or `priority`), all contacts 
 
 * `sort /by grad /order desc`
 
-&nbsp;
-![sort](images/sort/sort.png)
-&nbsp;
+    &nbsp;
+    ![sort](images/sort/sort.png)
+    &nbsp;
 
 * `sort /by name /order ascending`
 * `sort /by name`
@@ -507,9 +520,9 @@ your system. It does not factor in other fields like graduation year.
 
 * `filter /by tag /with friend colleague`
 
-&nbsp;
-![filter](images/filter/filter.png)
-&nbsp;
+    &nbsp;
+    ![filter](images/filter/filter.png)
+    &nbsp;
 
 * `filter /by course /with computer /taken true`
 * `filter /by course /with robotics`
@@ -541,10 +554,13 @@ It is optional to provide the link index. If not specified, it will **default to
 
 * `open 2 /index 2`
 
-&nbsp;
-![open link success](images/open/open-link.png)
-**Note:** The web browser used will be your computer's default web browser.
-&nbsp;
+    &nbsp;
+    ![open link success](images/open/open-link.png)
+
+    In the screenshot above, the 2nd link of contact #2 (Bernice Yu) has been opened in a web browser.
+
+    **Note:** The web browser used will be your computer's default web browser.
+    &nbsp;
 
 * `open 1`
 
@@ -572,10 +588,13 @@ It is optional to provide the email index. If not specified, it will **default t
 
 * `email 1`
 
-&nbsp;
-![open email success](images/open/open-email.png)
-**Note:** The email app used will be your computer's default email app.
-&nbsp;
+    &nbsp;
+    ![open email success](images/open/open-email.png)
+
+    In the screenshot above, a new draft email has been created, addressed to the the 1st email address of contact #1 (Alex Yeoh).
+
+    **Note:** The email app used will be your computer's default email app.
+    &nbsp;
 
 * `email 1 /index 2`
 
