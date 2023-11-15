@@ -246,7 +246,7 @@ For example, if your contact at index `1` already has the phone number `12345678
 
 <div style="break-after:page"></div>
 
-#### Edit contact detail: `edit [index] [field] [options]`
+#### Edit contact details: `edit [index] [field] [options]`
 
 You can use the `edit` command to edit contact details of existing contacts in your _NetworkBook_ so that you can update outdated/invalid information in your _NetworkBook_.
 
