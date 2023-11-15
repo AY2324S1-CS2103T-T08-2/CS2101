@@ -425,7 +425,7 @@ Using the find command will update the filter status to `Filter by: name`. The f
 
 #### Sort contacts list: `sort /by [field name] /order [asc/desc]`
 
-You can use the `sort` command to sort your list of contacts so that you can efficiently locate contacts with special characteristics that you are looking for. 
+You can use the `sort` command to sort your list of contacts, so that you can efficiently locate contacts with special characteristics that you are looking for. 
 If the list is currently filtered in a certain manner (using [`find`](#find-a-contact-find-name) or [`filter`](#filter-contacts-list-filter-by-field-with-term)), the updated list will also be filtered in the same manner.
 
 <div markdown="span" class="alert alert-warning">:bulb: **Note:**
@@ -437,21 +437,15 @@ When you first open _NetworkBook_, the list starts off sorted by **name** in **a
 
 **Parameters:**
 
-* `[field]` is the information to sort by.
-
-    List of options:
-
-    * `name` - Sort alphabetically by contact name
-    * `grad` - Sort chronologically by graduation year
-    * `priority` - Sort by priority
+* `[field]` is the information to sort by. You can specify the following fields:
+    * `name` : Sort alphabetically by contact name
+    * `grad` : Sort chronologically by graduation year
+    * `priority` : Sort by priority <br/> <br/>
 
 
-* `[order]` (optional) is the order to sort in. If not specified, defaults to ascending.
-
-    List of options:
-
-    * `asc`/`ascending` - Sort in ascending order
-    * `desc`/`descending` - Sort in descending order
+* `[order]` (optional) is the order to sort in (**defaults to ascending** if not specified). You can specify the following orders:
+    * `asc`/`ascending` : Sort in ascending order
+    * `desc`/`descending` : Sort in descending order
 
 <div markdown="span" class="alert alert-warning">
 :bulb: **Note:**
@@ -476,8 +470,7 @@ If sorting by an optional field (i.e. `graduation` or `priority`), all contacts 
 
 #### Filter contacts list: `filter /by [field] /with [term]`
 
-You can use the `filter` command to filter your list of contacts, temporarily hiding contacts that don't contain certain keywords
-for easy viewing. If the list is currently sorted (using [`sort`](#sort-contacts-list-sort-by-field-name-order-ascdesc)), the newly filtered list will be still be sorted in the same manner as before.
+You can use the `filter` command to filter your list of contacts, temporarily hiding contacts that don't contain certain keywords for easy viewing. If the list is currently sorted (using [`sort`](#sort-contacts-list-sort-by-field-name-order-ascdesc)), the newly filtered list will be still be sorted in the same manner as before.
 
 <div markdown="span" class="alert alert-warning"> :bulb: **Tip:**
 You can undo a filter command using [`undo`](#undo-last-change-to-networkbook-undo). You can reset filtering at any time using [`list`](#list-all-contacts-list).
@@ -487,26 +480,20 @@ You can undo a filter command using [`undo`](#undo-last-change-to-networkbook-un
 
 **Parameters:**
 
-* `[field]` is the information to filter by.
-
-    List of options:
-
-    * `course` - Filter to contacts whose courses contain one one of the terms
-    * `tag` - Filter to contacts whose tags contain one of the terms
-    * `spec` - Filter to contacts whose specialisations contain one of the terms
-    * `grad` - Filter to contacts who graduated in a specific year
+* `[field]` is the information to filter by. You can specify the following fields:
+    * `course` : Filter to contacts whose courses contain one one of the terms
+    * `tag` : Filter to contacts whose tags contain one of the terms
+    * `spec` : Filter to contacts whose specialisations contain one of the terms
+    * `grad` : Filter to contacts who graduated in a specific year <br/> <br/>
 
 
 * `[term]` is the terms that will be filtered against. All contacts
-in the filtered contact list must have part of the `[term]` in the `[field]`
-specified above.
+  in the filtered contact list must have part of the `[term]` in the `[field]`
+  specified above. <br/> <br/>
 * `[taken]` (optional). Only for filtering by `course`, this parameter additionally filters
-  out contacts who have finished/haven't started the course as of the current date of your system.
-
-    List of options:
-
-    * `true` - Remove contacts who have finished/haven't started the course as of the current date of your system.
-    * `false` - (default). Include all contacts with matching course terms in the filtered list regardless of course dates.
+  out contacts who have finished/haven't started the course as of the current date of your system. You can specify the following values:
+    * `true` : Remove contacts who have finished/haven't started the course as of the current date of your system.
+    * `false` (**default**): Include all contacts with matching course terms in the filtered list regardless of course dates. 
 
 
 <div markdown="span" class="alert alert-warning">
