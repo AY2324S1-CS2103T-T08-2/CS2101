@@ -8,6 +8,7 @@ tr:nth-child(odd) {
   background-color: #ffffff;
 }
 </style>
+
 <!-- @@author awhb -->
 
 ## Product Overview
@@ -24,11 +25,12 @@ Here's an overview of how _NetworkBook_ can help you manage your network of cont
 
 On top of these advantages, we believe that contact management must be **efficient**. Therefore, _NetworkBook_ is optimised for use via fully text based commands while still having an interactive and user-friendly visual interface. For fast typers, _NetworkBook_ can get your contact managing done faster than existing alternatives performing a similar role.
 
+<div style="break-after:page"></div>
+
 ## Table of Contents
 
 * TOC
 {:toc}
-
 <!-- @@author Eola-Z -->
 
 ## About This User Guide
@@ -56,9 +58,11 @@ _NetworkBook_ 1.3 includes several new **features and improvements** for ease of
 * User interface has now been refined to be more clean and usable.
 * Error messages are now more specific to give more helpful information.
 
+<div style="break-after:page"></div>
+
 <!-- @@author xenosf -->
 
-## Getting Started
+<h2 style="margin-top: 0">Getting Started</h2>
 
 1. Make sure you have **Java 11** installed on your computer.
     * You can check that it is installed by running the command `java --version` in the command prompt/terminal.
@@ -84,7 +88,7 @@ _NetworkBook_ 1.3 includes several new **features and improvements** for ease of
         ![Annotated diagram of the _NetworkBook_ window](./images/gui-annotated.png)
     * This is what a contact in _NetworkBook_ looks like:
         ![Annotated diagram of a _NetworkBook_ contact](./images/contact.png)
-2. You can now start using _NetworkBook_!
+1. You can now start using _NetworkBook_!
     * **Learn more** about the commands in the [features](#features) section.
 
 ## Features
@@ -111,6 +115,10 @@ Some fields are **single-valued fields**, meaning that each contact has **only 1
 
 Other fields are **multi-valued fields**. Each contact has a **list** of different values for each of these fields.
 
+<div style="break-after:page"></div>
+
+<br/>
+
 | Multi-valued fields | Prefix  | Value format                                            | Remarks                                                         |
 | ------------------- | ------- | ------------------------------------------------------------ | --------------------------------------------------------------- |
 | phone numbers       | /phone  | Valid phone number containing numbers and optional country code (1-3 numbers with `+` in front) if applicable | Phone number body (excluding country code) must be at least 3 digits long.<br/>Phone numbers with and without whitespace character are treated as different (e.g. `+6512345678` is different from `+65 12345678`). |
@@ -121,6 +129,9 @@ Other fields are **multi-valued fields**. Each contact has a **list** of differe
 | tags                | /tag    | Any non-empty value                                          |-|
 
 In _NetworkBook_, you can manage contact information by changing the fields assigned to them. Following are the commands you can use to manage fields of a contact:
+
+<div style="break-after:page"></div> 
+<br/>
 
 | Command                                                          | How does it manage the fields                                  |
 |------------------------------------------------------------------|----------------------------------------------------------------|
@@ -174,7 +185,7 @@ To view a comprehensive list of fields and their prefixes, go to the [Contact Fi
 * `create /name Jiale /phone 12345678 /grad AY2526-S2`
 
     &nbsp;
-    ![create command](images/create/create.png)
+    <img src="images/create/create.png" width="600">
 
     In the screenshot above, the contact "Jiale" has been created. Jiale's index number depends on the list's current sorting - in this case, "Jiale" is #6 when sorted by name.
     &nbsp;
@@ -182,6 +193,8 @@ To view a comprehensive list of fields and their prefixes, go to the [Contact Fi
 * `create /name Jiale`
 
 [Table of Contents](#table-of-contents)
+
+<div style="break-after:page"></div> 
 
 #### Add details to contact: `add [index] [fields]`
 
@@ -208,15 +221,16 @@ To view a comprehensive list of fields and their prefixes, go to the [Contact Fi
 <div markdown="span" class="alert alert-warning">
 :bulb: This command ignores any input field values that are already present in your target contact.
 For example, if your contact at index `1` already has the phone number `12345678`, the command `add 1 /phone 12345678` does nothing.
-
 </div>
+
+<div style="break-after:page"></div>
 
 **Example usage:**
 
 * `add 1 /phone 91234567`
 
     &nbsp;
-    ![add phone](images/add-remark/add-phone.png)
+    <img src="images/add-remark/add-phone.png" width="600">
 
     In the screenshot above, the phone number `91234567` has been added to contact #1 (Alex Yeoh).
     &nbsp;
@@ -226,6 +240,8 @@ For example, if your contact at index `1` already has the phone number `12345678
 * `add 1 /priority high /tag data analyst /course CS1101S /spec Robotics & AI`  
 
 [Table of Contents](#table-of-contents)
+
+<div style="break-after:page"></div>
 
 #### Edit contact detail: `edit [index] [field] [options]`
 
@@ -260,12 +276,14 @@ If index of a multi-valued field is not specified, it will **default to 1**.
 To view a comprehensive list of fields and their prefixes, go to the [Contact Fields section](#contact-fields).
 </div>
 
+<div style="break-after:page"></div>
+
 **Example usage:**
 
 * `edit 3 /priority low`
 
     &nbsp;
-    ![update success](images/edit/edit.png)
+    <img src="images/edit/edit.png" width="600">
 
     In the screenshot above, contact #3 (Charlotte Oliveiro)'s priority has been changed to `low` (1 star)
     &nbsp;
@@ -287,12 +305,14 @@ You can remove a contact from your _NetworkBook_ using the `delete` command, so 
 
 * `[index]` is the [index](#indices) of the contact in the list.
 
+<div style="break-after:page"></div>
+
 **Example usage:**
 
 * `delete 6`
 
     &nbsp;
-    ![delete](images/delete/delete.png)
+    <img src="images/delete/delete.png" width="600">
 
     In the screenshot above, the contact previously numbered #6 (Jiale) has been deleted.
     &nbsp;
@@ -337,7 +357,7 @@ To view a comprehensive list of fields and their prefixes, go to the [Contact Fi
 * `delete 1 /phone /index 2`
 
     &nbsp;
-    ![delete phone](images/delete/delete-phone.png)
+    <img src="images/delete/delete-phone.png" width="600">
 
     In the screenshot above, the 2nd phone number of contact #1 (Alex Yeoh) has been deleted.
     &nbsp;
@@ -370,6 +390,8 @@ You can undo a clear command using [`undo`](#undo-last-change-to-networkbook-und
 * `clear`
 
 [Table of Contents](#table-of-contents)
+
+<div style="break-after:page"></div>
 
 ### <u>Category 2 - View contact details</u>
 
@@ -404,17 +426,18 @@ If the list is currently sorted in a particular manner (using [`sort`](#sort-con
 
 
 <div markdown="span" class="alert alert-warning"> 
-
 :bulb: **Note:**
 Using the find command will update the filter status to `Filter by: name`. The find command will also override a filter command if you used it, and vice versa.
 </div>
+
+<div style="break-after:page"></div>
 
 **Example usage:**
 
 * `find Dav`
 
     &nbsp;
-    ![search](images/find/find.png)
+    <img src="images/find/find.png" width="600">
     &nbsp;
 
 * `find Kai Jie`
@@ -450,7 +473,6 @@ When you first open _NetworkBook_, the list starts off sorted by **name** in **a
 <div markdown="span" class="alert alert-warning">
 :bulb: **Note:**
 If sorting by an optional field (i.e. `graduation` or `priority`), all contacts without that field will be placed at the bottom of the sorted list regardless of sorting order.
-
 </div>
 
 **Example usage:**
@@ -458,7 +480,7 @@ If sorting by an optional field (i.e. `graduation` or `priority`), all contacts 
 * `sort /by grad /order desc`
 
     &nbsp;
-    ![sort](images/sort/sort.png)
+    <img src="images/sort/sort.png" width="600">
     &nbsp;
 
 * `sort /by name /order ascending`
@@ -467,6 +489,8 @@ If sorting by an optional field (i.e. `graduation` or `priority`), all contacts 
 [Table of Contents](#table-of-contents)
 
 <!-- @@author Eola-Z -->
+
+<div style="break-after:page"></div>
 
 #### Filter contacts list: `filter /by [field] /with [term]`
 
@@ -500,20 +524,25 @@ You can undo a filter command using [`undo`](#undo-last-change-to-networkbook-un
 :bulb: **Note:**
 `taken` compares the dates of the course with the current date of
 your system. It does not factor in other fields like graduation year.
-
 </div>
+
+<div style="break-after:page"></div>
 
 **Example usage:**
 
 * `filter /by tag /with friend colleague`
 
     &nbsp;
-    ![filter](images/filter/filter.png)
+
+    <img src="images/filter/filter.png" width="600">
     &nbsp;
 
 * `filter /by course /with computer /taken true`
+
 * `filter /by course /with robotics`
+
 * `filter /by spec /with Industry AI`
+
 * `filter /by grad /with 2022 2023 2024 2025`
 
 [Table of Contents](#table-of-contents)
@@ -542,7 +571,7 @@ It is optional to provide the link index. If not specified, it will **default to
 * `open 2 /index 2`
 
     &nbsp;
-    ![open link success](images/open/open-link.png)
+    <img src="images/open/open-link.png" width="700">
 
     In the screenshot above, the 2nd link of contact #2 (Bernice Yu) has been opened in a web browser.
 
@@ -566,7 +595,6 @@ You can use the `email` command to open the default mailbox application to compo
 
 <div markdown="span" class="alert alert-warning">
 :bulb: **Note:**
-
 It is optional to provide the email index. If not specified, it will **default to 1**.
 </div>
 
@@ -576,7 +604,7 @@ It is optional to provide the email index. If not specified, it will **default t
 * `email 1`
 
     &nbsp;
-    ![open email success](images/open/open-email.png)
+    <img src="images/open/open-email.png" width="700">
 
     In the screenshot above, a new draft email has been created, addressed to the the 1st email address of contact #1 (Alex Yeoh).
 
@@ -588,6 +616,8 @@ It is optional to provide the email index. If not specified, it will **default t
 [Table of Contents](#table-of-contents)
 
 <!-- @@author awhb -->
+
+<div style="break-after:page"></div>
 
 ### <u>Category 3 - Miscellaneous commands</u>
 
@@ -636,7 +666,7 @@ You can use the `help` command to open a help window containing a link to this u
 * `help`
 
 &nbsp;
-![screenshot of help window](images/help.png)
+<img src="images/help.png" width="600">
 &nbsp;
 
 [Table of Contents](#table-of-contents)
@@ -674,6 +704,8 @@ You can use the `exit` command to close the _NetworkBook_ app.
 [Table of Contents](#table-of-contents)
 
 <!-- @@author Singa-Pirate -->
+
+<div style="break-after:page"></div>
 
 ### <u>Category 4 - Accessibility features</u>
 
@@ -754,6 +786,8 @@ You can click on a contact's email address to **draft an email** to the contact.
 
 [Table of Contents](#table-of-contents)
 
+<div style="break-after: page"></div>
+
 ## Command summary
 
 | Command                                                      | Prefixes                                                     | Format and examples                                          | What it does                                                 |
@@ -779,6 +813,8 @@ You can click on a contact's email address to **draft an email** to the contact.
 [Table of Contents](#table-of-contents)
 
 <!-- @@author Singa-Pirate -->
+
+<div style="break-after:page"></div>
 
 ## FAQ
 
