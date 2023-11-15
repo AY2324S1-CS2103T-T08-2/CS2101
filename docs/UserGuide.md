@@ -79,12 +79,15 @@ _NetworkBook_ 1.3 includes several new **features and improvements** for ease of
         1. Open your terminal emulator app.
         1. Navigate to the folder you have created using `cd`.
         1. Type in `java -jar networkbook.jar`, then press enter to open the app.
+
+<div style="page-break-after: always;"></div>
+
 1. You should now see the _NetworkBook_ window on your screen.
     * This is what the _NetworkBook_ window looks like:
         ![Annotated diagram of the _NetworkBook_ window](./images/gui-annotated.png)
     * This is what a contact in _NetworkBook_ looks like:
         ![Annotated diagram of a _NetworkBook_ contact](./images/contact.png)
-2. You can now start using _NetworkBook_!
+1. You can now start using _NetworkBook_!
     * **Learn more** about the commands in the [features](#features) section.
 
 ## Features
