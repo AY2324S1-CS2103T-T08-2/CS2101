@@ -335,7 +335,7 @@ To view a comprehensive list of fields and their prefixes, go to the start of th
 
 You can remove all contacts from your _NetworkBook_ using the `clear` command, so that you can repopulate _NetworkBook_ with a new set of contact details more efficiently.
 
-<div markdown="span" class="fa fa-info">:warning: **Warning:**
+<div markdown="span" class="alert alert-danger">:warning: **Warning:**
 This command deletes **all** of your contacts. Only do this if you are sure.
 </div>
 
@@ -695,7 +695,7 @@ Note that this only works when the command box is not active. If you are typing 
 * `ctrl-W`: exit _NetworkBook_ (equivalent to [`exit` command](#exit-networkbook-exit))
 * `F1`: view help window (equivalent to [`help` command](#view-help-window-help))
 
-<div markdown="span" class="fa fa-info">
+<div markdown="span" class="alert alert-danger">
 :warning: **Note:**
 If the `F1` key is bound to a different function in your computer settings, the keyboard shortcut to view help window may not work as expected.
 </div>
