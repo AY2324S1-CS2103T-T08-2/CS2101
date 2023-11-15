@@ -238,6 +238,7 @@ For **multi-valued** fields, the `/index` prefix is optional and at most 1 index
 
 <div markdown="span" class="alert alert-warning">
 :bulb: **Note:**
+
 If index of a multi-valued field is not specified, it will **default to 1**.
 </div>
 
@@ -335,7 +336,7 @@ To view a comprehensive list of fields and their prefixes, go to the start of th
 
 You can remove all contacts from your _NetworkBook_ using the `clear` command, so that you can repopulate _NetworkBook_ with a new set of contact details more efficiently.
 
-<div markdown="span" class="fa fa-info">:warning: **Warning:**
+<div markdown="span" class="alert alert-danger">:warning: **Warning:**
 This command deletes **all** of your contacts. Only do this if you are sure.
 </div>
 
