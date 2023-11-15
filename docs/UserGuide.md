@@ -86,11 +86,14 @@ _NetworkBook_ 1.3 includes several new **features and improvements** for ease of
 
 <div style="page-break-after: always;"></div>
 
-1. You should now see the _NetworkBook_ window on your screen.
+6. You should now see the _NetworkBook_ window on your screen.
     * This is what the _NetworkBook_ window looks like:
         ![Annotated diagram of the _NetworkBook_ window](./images/gui-annotated.png)
     * This is what a contact in _NetworkBook_ looks like:
         ![Annotated diagram of a _NetworkBook_ contact](./images/contact.png)
+
+    <div style="page-break-after: always;"></div>
+
 1. You can now start using _NetworkBook_!
     * **Learn more** about the commands in the [features](#features) section.
 
@@ -116,9 +119,10 @@ Some fields are **single-valued fields**, meaning that each contact has **only 1
 | priority level       | /priority | Either `high`, `medium` or `low`, or the initial alphabet    | Not case-sensitive                                           |
 | graduation semester  | /grad     | `AYxxxx-Sy`<br/><br/>e.g., `AY2223-S1` for Academic Year 20`22`/20`23` Semester `1` | `xxxx` is the 4-digit representation of 2 **consecutive** calendar years.<br/>Academic year must be between AY1970/1971 to AY2069/2070 (inclusive). <br/>`y` is either `1` for Semester 1, or `2` for Semester 2. |
 
+<div style="break-after:page"></div>
+
 Other fields are **multi-valued fields**. Each contact has a **list** of different values for each of these fields.
 
-<div style="break-after:page"></div>
 
 <br/>
 
@@ -131,10 +135,11 @@ Other fields are **multi-valued fields**. Each contact has a **list** of differe
 | specialisations     | /spec   | Any non-empty value                                          |-|
 | tags                | /tag    | Any non-empty value                                          |-|
 
-In _NetworkBook_, you can manage contact information by changing the fields assigned to them. Following are the commands you can use to manage fields of a contact:
-
 <div style="break-after:page"></div> 
 <br/>
+
+In _NetworkBook_, you can manage contact information by changing the fields assigned to them. Following are the commands you can use to manage fields of a contact:
+
 
 | Command                                                          | How does it manage the fields                                  |
 |------------------------------------------------------------------|----------------------------------------------------------------|
@@ -297,6 +302,7 @@ To view a comprehensive list of fields and their prefixes, go to the [Contact Fi
 [Table of Contents](#table-of-contents)
 
 <!-- @@author Singa-Pirate -->
+
 <div style="page-break-after: page;"></div>
 
 #### Delete a contact: `delete [index]`
