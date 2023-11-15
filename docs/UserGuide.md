@@ -91,27 +91,27 @@ _NetworkBook_ 1.3 includes several new **features and improvements** for ease of
 
 ### Contact Fields
 
-Many of NetworkBook's commands allow you to specify a particular _field_ (piece of information) of a contact to operate on. This section lists all of the available fields, as well as how you can specify them in commands.
+Many commands in _NetworkBook_ allow you to specify a particular **field** (piece of information) of a contact to operate on. This section lists all of the available fields, as well as how you can specify them in commands.
 
 <!-- @@author Singa-Pirate -->
 
 <div markdown="block" class="alert alert-info">
 
-:information_source: **Fields of a contact**
+:information_source: **Fields and prefixes**
 
-In _NetworkBook_, details of a contact are categorised into different **fields**. Each field has a corresponding **prefix** in the command format.
+Each field in _NetworkBook_ has a corresponding **prefix**. To specify a field in your command, follow the format of `[field prefix] [field value]`, e.g. `/name Tom`.
 
 Some fields are **single-valued fields**, meaning that each contact has **only 1 value** for each of these fields.
 
-| Single-valued fields | Prefix    | Format                                                                              | Remarks                                                  |
-| -------------------- | --------- |-------------------------------------------------------------------------------------| -------------------------------------------------------- |
-| name                 | /name     | Any non-empty value comprising alphanumeric characters (and spaces, if any)         | If a contact's name contains non-alphanumeric characters (e.g. `/`), you may omit these characters in the name that you store. |
-| priority level       | /priority | Either `high`, `medium` or `low`, or the initial alphabet                           | Not case-sensitive                                       |
+| Single-valued fields | Prefix    | Value format                                                 | Remarks                                                      |
+| -------------------- | --------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| name                 | /name     | Any non-empty value comprising alphanumeric characters (and spaces, if any) | If a contact's name contains non-alphanumeric characters (e.g. `/`), you may omit these characters in the name that you store. |
+| priority level       | /priority | Either `high`, `medium` or `low`, or the initial alphabet    | Not case-sensitive                                           |
 | graduation semester  | /grad     | `AYxxxx-Sy`<br/><br/>e.g., `AY2223-S1` for Academic Year 20`22`/20`23` Semester `1` | `xxxx` is the 4-digit representation of 2 **consecutive** calendar years.<br/>Academic year must be between AY1970/1971 to AY2069/2070 (inclusive). <br/>`y` is either `1` for Semester 1, or `2` for Semester 2. |
 
 Other fields are **multi-valued fields**. Each contact has a **list** of different values for each of these fields.
 
-| Multi-valued fields | Prefix  | Format                                                       | Remarks                                                         |
+| Multi-valued fields | Prefix  | Value format                                            | Remarks                                                         |
 | ------------------- | ------- | ------------------------------------------------------------ | --------------------------------------------------------------- |
 | phone numbers       | /phone  | Valid phone number containing numbers and optional country code (1-3 numbers with `+` in front) if applicable | Phone number body (excluding country code) must be at least 3 digits long.<br/>Phone numbers with and without whitespace character are treated as different (e.g. `+6512345678` is different from `+65 12345678`). |
 | email addresses     | /email  | Valid email with `@` (at sign) and `.` (period) present after `@` |-|
@@ -690,7 +690,11 @@ You can use the `exit` command to close the _NetworkBook_ app.
 
 ### <u>Category 4 - Accessibility features</u>
 
-This category introduces available interactions using **keyboard** and **mouse** that add more scaffolding to your networking experience. Relevant commands and explanations of their functionalities are outlined below:
+This category introduces available interactions using **keyboard** and **mouse** that add more scaffolding to your networking experience. Relevant features are outlined below:
+
+### Keyboard shortcuts
+
+_NetworkBook_ supports many convenient keyboard shortcuts for you to execute commands efficiently.
 
 #### Auto-fill command preamble: `ctrl-F/N/G/U/R`
 
@@ -744,6 +748,8 @@ If the `F1` key is bound to a different function in your computer settings, the 
 [Table of Contents](#table-of-contents)
 
 <!-- @@author xenosf -->
+
+### Mouse interaction
 
 While _NetworkBook_ is optimised for use with keyboards and text commands, it also has buttons you can click to execute certain commands.
 
